@@ -31,6 +31,6 @@ a {
 }
 .bgImage {
 	background: url("/assets/hero-back.svg");
-	background-repeat: no-repeats;
+	background-repeat: no-repeat;
 	background-position: center;
 }
