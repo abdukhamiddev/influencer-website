@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Features from "../components/Features";
+import Feedback from "../components/Feedback";
 
 import Hero from "../components/Hero";
 import MenuOverlay from "../components/MenuOverlay";
@@ -13,6 +14,7 @@ export default function Home() {
 			<MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
 			<Hero />
 			<Features />
+			<Feedback />
 		</section>
 	);
 }

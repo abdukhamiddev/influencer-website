@@ -12,6 +12,7 @@ module.exports = {
 			mulish: ["Mulish", "sans-serif"],
 			nori: ["Norican", "sans-serif"],
 			ubuntu: ["Ubuntu", "sans-serif"],
+			inter: ["Inter", "sans-serif"],
 		},
 		extend: {},
 	},
