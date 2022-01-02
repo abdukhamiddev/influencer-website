@@ -3,7 +3,7 @@ import LogoImage from "../public/assets/logo.svg";
 import Brand from "../public/assets/brand.svg";
 const Logo = () => {
 	return (
-		<div className="flex items-center space-x-4">
+		<div className="flex items-center space-x-4   ">
 			<LogoImage />
 			<Brand />
 		</div>

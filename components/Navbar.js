@@ -24,7 +24,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
 					<Logo />
 				</div>
 				<button
-					className="relative top-0 right-0 z-20 flex w-10 h-10 focus:outline-none"
+					className="relative top-0 right-0 z-10 flex w-10 h-10 focus:outline-none"
 					onClick={() => setNavbarOpen(!navbarOpen)}
 				>
 					<HamburgerMenu navbarOpen={navbarOpen} />
