@@ -13,8 +13,8 @@ const Features = () => {
 	return (
 		<>
 			<section className="bg-gradient-to-b from-blue-50 to-blue-100 z-4">
-				<div className="mx-[9vw]  relative z-20 space-x-[89px] grid lg:grid-cols-2 grid-cols-1  ">
-					<div className="hidden grid-cols-2 md:grid">
+				<div className="lg:mx-[9vw]  relative z-20 lg:space-x-[89px] grid lg:grid-cols-2 grid-cols-1  ">
+					<div className="hidden grid-cols-2 lg:grid">
 						<div className="mt-[30px] space-y-4 lg:pr-[60px] w-[300px] ">
 							<Star className="object-contain w-full" />
 							<People />
@@ -24,15 +24,14 @@ const Features = () => {
 							<Hand />
 						</div>
 					</div>
-					<div className="space-y-8 pt-[50px] lg:pl-[40px]">
-						<h1 className="text-[#23049D] font-sand font-bold text-[35px] leading-[100%]">
+					<div className="space-y-8 pt-[50px] lg:pl-[40px] flex flex-col    mx-[6vw] md:mx-[8vw] items-center lg:items-stretch">
+						<h1 className="text-[#23049D] font-sand font-bold md:text-[45px] leading-[100%] text-[30px] text-center md:text-justify lg:text-[35px]">
 							Smart Way you can <br /> grow your business
 						</h1>
-						<p className="font-mulish text-[15px] leading-[22.5px]">
+						<p className="font-mulish md:text-[15px] leading-[22.5px] text-[14px] ">
 							As you're browsing available influencer marketing <br />
-							consultates,it can be helpful to develope a sharelist of the{" "}
-							<br />
-							contractors you may want to interview
+							consultates,it can be helpful to develope a sharelist <br /> of
+							they contractors you may want to interview
 						</p>
 						<div className="font-sand font-bold text-[15px] leading-[22.5px] ">
 							<div className="flex pb-[10px] space-x-2">
@@ -53,7 +52,7 @@ const Features = () => {
 						</Button>
 					</div>
 				</div>
-				<div className="grid grid-cols-2 mx-[9vw] pt-[166px]">
+				<div className=" lg:mx-[9vw] pt-[166px]    flex  justify-center  items-center lg:items-stretch  lg:justify-between">
 					<div>
 						<h1 className="font-nori font-normal text-[34px] text-[#aa2ee6] leading-[37.88px] pb-[13px]">
 							Top Influencers This Month
@@ -89,10 +88,11 @@ const Features = () => {
 								</div>
 							</div>
 						</div>
-
-						<Button className="text-white bg-[#23049d] mt-[50px]">
-							Check Profile
-						</Button>
+						<div className="flex justify-center">
+							<Button className="text-white bg-[#23049d] mt-[50px] font-sand font-semibold text-[18px] leading-[21px]">
+								Check Profile
+							</Button>
+						</div>
 					</div>
 					<div className="hidden lg:flex">
 						<Girl2 />
