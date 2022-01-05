@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Features from "../components/Features";
 import Feedback from "../components/Feedback";
+import Footer from "../components/Footer";
 
 import Hero from "../components/Hero";
 import MenuOverlay from "../components/MenuOverlay";
@@ -15,6 +16,7 @@ export default function Home() {
 			<Hero />
 			<Features />
 			<Feedback />
+			<Footer />
 		</section>
 	);
 }

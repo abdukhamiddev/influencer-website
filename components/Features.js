@@ -14,7 +14,7 @@ import Image from "next/image";
 const Features = () => {
 	return (
 		<>
-			<section className="bg-gradient-to-b from-blue-50 to-blue-100 z-4">
+			<section className="bg-gradient-to-b from-blue-50/60 to-blue-100/20 z-4">
 				<div className="lg:mx-[9vw]  relative z-20 lg:space-x-[89px] grid lg:grid-cols-2 grid-cols-1  ">
 					<div className="hidden grid-cols-2 lg:grid">
 						<div className="mt-[30px] space-y-4 lg:pr-[60px] w-[300px] ">

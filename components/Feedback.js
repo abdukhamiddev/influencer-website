@@ -196,7 +196,24 @@ const Feedback = () => {
 			</div>
 
 			<div className="mx-[9vw] pb-[200px] ">
-				<div className="w-full h-[170px] rounded-[8px] bg-[#23049D] mt-[100px]"></div>
+				<div className="w-full h-[300px] rounded-[8px] bg-[#23049D] mt-[100px] flex justify-between items-center px-[4vw] flex-col md:flex-row py-6  md:h-[200px]">
+					<div>
+						<h1 className="font-sand text-[#ffffff] font-bold md:text-[36px] leading-[40px] text-[20px] text-center   md:pr-[60px]">
+							Ready to get started?
+						</h1>
+
+						<p className="font-mulish md:text-[15px] text-[#ffffffcc] pt-[20px] text-[12px]  md:whitespace-normal  taller:whitespace-normal ">
+							It is a long established fact that a reader will be distracted by
+							the
+							<br /> readable content of a page when looking at its layout.
+						</p>
+					</div>
+					<div>
+						<Button className="bg-[#FFDf6B] font-sand  font-semibold md:text-[18px] text-[14px]">
+							Check Influencer Library
+						</Button>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
