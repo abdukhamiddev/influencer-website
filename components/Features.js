@@ -100,7 +100,7 @@ const Features = () => {
 						</div>
 					</div>
 					<div className="hidden lg:flex">
-						<Image src={Girl2} width={507} height={507} alt="HeroGirl" />
+						<Image src={Girl2} alt="HeroGirl" priority />
 					</div>
 				</div>
 			</section>

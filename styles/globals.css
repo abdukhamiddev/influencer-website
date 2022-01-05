@@ -30,7 +30,7 @@ a {
 	box-sizing: border-box;
 }
 .bgImage {
-	background: url("/assets/hero-back.svg");
+	background: url("/assets/hero-back.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }

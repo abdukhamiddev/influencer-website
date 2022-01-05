@@ -5,7 +5,7 @@ import Button from "./Button";
 const Hero = () => {
 	return (
 		<>
-			<div className="bg-[url('/assets/blueshape.svg')] lg:h-screen  bg-no-repeat mt-[120px] relative  lg:mx-[10vw] flex    rounded-[50px]  mx-[4vw] mb-[40px] tallest:h-[500px] items-center ">
+			<div className="bg-[url('/assets/hero-blue.png')] lg:h-screen  bg-no-repeat mt-[120px] relative  lg:mx-[10vw] flex    rounded-[50px]  mx-[4vw] mb-[40px] tallest:h-[500px] items-center ">
 				<div className="flex flex-col items-center justify-center    lg:items-stretch xs:text-justify lg:pl-[50px] pb-[100px] tall:pb-[200px] pl-[20px]  pt-[100px] md:pt-[40px]  taller:py-[100px] ">
 					<div>
 						<h1 className="font-semibold text-white font-sand lg:text-[65px] leading-[100%]  mb-[20px] md:text-[50px] text-[30px] w-full ">

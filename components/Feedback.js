@@ -15,6 +15,12 @@ const MasterCard = dynamic(() => import("../public/assets/mastercard.svg"));
 const Suzuki = dynamic(() => import("../public/assets/suzuki.svg"));
 const Supreme = dynamic(() => import("../public/assets/supreme.svg"));
 
+import Card1 from "../public/assets/card.webp";
+import Card2 from "../public/assets/card2.webp";
+import Card3 from "../public/assets/card3.webp";
+import Card4 from "../public/assets/card4.webp";
+import Card from "./Card";
+
 const Feedback = () => {
 	return (
 		<div className="pt-[150px]">
@@ -25,7 +31,7 @@ const Feedback = () => {
 				</h1>
 
 				<div>
-					<Image src={Snapchat} width={977} height={602} alt="snapchat" />
+					<Image src={Snapchat} alt="snapchat" priority />
 				</div>
 			</div>
 			<div className="flex items-center font-bold justify-evenly font-inter">
@@ -48,7 +54,7 @@ const Feedback = () => {
 					<Circle />
 				</div>
 
-				<div className=" mx-[5vw]">
+				<div className="mx-[5vw] ">
 					<h1 className="font-sand font-bold text-[#23049d] lg:text-[36px] lg:leading-[40.01px] text-[20px]  ">
 						Review by influencer help <br /> you to grow your business <br />
 						several way
@@ -102,10 +108,11 @@ const Feedback = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="mx-[9vw]">
-				<div className=" grid lg:grid-cols-2 pt-[120px] pb-[100px] grid-cols-1">
+				<div className=" grid lg:grid-cols-2 pt-[120px] lg:pb-[100px] grid-cols-1">
 					<div className="flex flex-col items-start space-y-6">
-						<h1 className="font-sand text-[#23049d] lg:text-[36px] md::leading-[41px] font-bold text-[20px]">
+						<h1 className="font-sand text-[#23049d] lg:text-[36px] md:leading-[41px] font-bold text-[20px] tall:whitespace-pre tall:text-[30px] ">
 							You will not believe what <br />
 							can be happened after <br />
 							our contribution
@@ -121,9 +128,9 @@ const Feedback = () => {
 							See Case Study
 						</Button>
 					</div>
-					<div className="h-[293px] lg:w-[501px] bg-[#AA2EE6] flex justify-center rounded-[8px] mix-blend-normal sh-box mt-[50px] lg:mt-0 md:pt-0 w-auto">
+					<div className="h-[293px] lg:w-[501px] bg-[#AA2EE6] flex justify-center rounded-[8px] mix-blend-normal sh-box mt-[50px] lg:mt-0 md:pt-0 w-auto tallest:w-[460px] ">
 						<div className="flex flex-col items-start justify-center space-y-6 ">
-							<h1 className="text-[#ffffffcc] font-mulish lg:text-[20px] leading-[139.9%] text-[12px]">
+							<h1 className="text-[#ffffffcc] font-mulish md:text-[20px] leading-[139.9%] text-[12px]">
 								“Not exaggerating when I say the best <br /> account lead for a
 								vendor influencer <br /> program – and trust me, I've worked
 								with <br />
@@ -144,6 +151,52 @@ const Feedback = () => {
 					<Suzuki />
 					<Supreme />
 				</div>
+
+				<div className="lg:pt-[127px] pt-[50px]">
+					<div className="text-center pb-[42px]">
+						<h1 className="font-sand font-bold lg:text-[35px] text-[#23049D] pb-[20px] text-[25px]">
+							Why are you waiting for? <br />
+							Hire our best influencer for your project
+						</h1>
+						<Button className="tex-black bg-[#FFFD6B] font-sand font-semibold text-[18px] ">
+							Check influencers Library
+						</Button>
+					</div>
+					<div className="justify-between hidden lg:flex">
+						<Card
+							ImagePerson={Card1}
+							name="Jabin"
+							surname="Islam"
+							city="Chittagong"
+							country="Bangladesh"
+						/>
+						<Card
+							ImagePerson={Card3}
+							name="Zia"
+							surname="Uddin"
+							city="LA"
+							country="USA"
+						/>
+						<Card
+							ImagePerson={Card2}
+							name="Aziz"
+							surname="Tareq"
+							city="Chittagong"
+							country="Bangladesh"
+						/>
+						<Card
+							ImagePerson={Card4}
+							name="Saifa"
+							surname="Khussen"
+							city="Chittagong"
+							country="Bangladesh"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div className="mx-[9vw] pb-[200px] ">
+				<div className="w-full h-[170px] rounded-[8px] bg-[#23049D] mt-[100px]"></div>
 			</div>
 		</div>
 	);
