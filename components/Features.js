@@ -1,13 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import People from "../public/assets/handshape.svg";
-import Hand from "../public/assets/socialshape.svg";
-import Social from "../public/assets/peopleshape.svg";
-import Star from "../public/assets/starshape.svg";
-import Checked from "../public/assets/checked.svg";
+import dynamic from "next/dynamic";
+const People = dynamic(() => import("../public/assets/handshape.svg"));
+const Hand = dynamic(() => import("../public/assets/socialshape.svg"));
+const Social = dynamic(() => import("../public/assets/peopleshape.svg"));
+const Star = dynamic(() => import("../public/assets/starshape.svg"));
+const Checked = dynamic(() => import("../public/assets/checked.svg"));
 
-import Girl2 from "../public/assets/girl.svg";
+import Girl2 from "../public/assets/girl.webp";
 import Button from "./Button";
+import Image from "next/image";
 
 const Features = () => {
 	return (
@@ -95,7 +97,7 @@ const Features = () => {
 						</div>
 					</div>
 					<div className="hidden lg:flex">
-						<Girl2 />
+						<Image src={Girl2} width={400} height={500} alt="HeroGirl" />
 					</div>
 				</div>
 			</section>

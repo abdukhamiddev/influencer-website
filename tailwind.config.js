@@ -14,7 +14,13 @@ module.exports = {
 			ubuntu: ["Ubuntu", "sans-serif"],
 			inter: ["Inter", "sans-serif"],
 		},
-		extend: {},
+		extend: {
+			screens: {
+				tall: { raw: "(min-height: 800px)" },
+				taller: { raw: "(min-height: 1024px)" },
+				tallest: { raw: "(min-height: 1366px)" },
+			},
+		},
 	},
 	plugins: [
 		require("postcss-import"),

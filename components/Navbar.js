@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import Logo from "./Logo";
-import HamMenu from "../public/assets/hamburger-menu.svg";
+
+import dynamic from "next/dynamic";
 import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
@@ -19,7 +20,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
 					Account
 				</Button>
 			</div>
-			<header className="fixed top-0 left-0 z-20 flex w-full p-10 lg:hidden pb-[50px]">
+			<header className="absolute top-0 left-0 z-20 flex w-full p-10 lg:hidden pb-[50px]">
 				<div className="z-20 flex-grow">
 					<Logo />
 				</div>

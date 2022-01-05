@@ -1,11 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Snapchat from "../public/assets/snapchat.svg";
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import Snapchat from "../public/assets/snapchat.webp";
+const Circle = dynamic(() => import("../public/assets/circle.svg"));
+import Circle1 from "../public/assets/circle.png";
 
-import Circle from "../public/assets/circle.svg";
-import Comment from "../public/assets/comment.svg";
-import HandShake from "../public/assets/Vector.svg";
-import Influencer from "../public/assets/influencer.svg";
+const Comment = dynamic(() => import("../public/assets/comment.svg"));
+const HandShake = dynamic(() => import("../public/assets/Vector.svg"));
+const Influencer = dynamic(() => import("../public/assets/influencer.svg"));
+
 const Feedback = () => {
 	return (
 		<div className="pt-[150px]">
@@ -16,28 +20,29 @@ const Feedback = () => {
 				</h1>
 
 				<div>
-					<Snapchat />
+					<Image src={Snapchat} width={977} height={602} alt="snapchat" />
 				</div>
 			</div>
 			<div className="flex items-center font-bold justify-evenly font-inter">
 				<div className="flex flex-col items-center">
-					<h1 className="text-[80px] text-[#AA2EE6]">6K</h1>
-					<h3 className="text-[18px]">Influencer</h3>
+					<h1 className="lg:text-[80px] text-[20px] text-[#AA2EE6]">6K</h1>
+					<h3 className="lg:text-[18px] text-[14px]">Influencer</h3>
 				</div>
 				<div className="flex flex-col items-center">
-					<h1 className="text-[80px] text-[#23049D]">4676</h1>
-					<h3 className="text-[18px]">Case Study</h3>
+					<h1 className="lg:text-[80px]  text-[20px]text-[#23049D]">4676</h1>
+					<h3 className="lg:text-[18px] text-[14px]">Case Study</h3>
 				</div>
 				<div className="flex flex-col items-center">
-					<h1 className="text-[80px] text-[#AA2EE6]">16K</h1>
-					<h3 className="text-[18px]"> Project Submitted</h3>
+					<h1 className="lg:text-[80px] text-[20px] text-[#AA2EE6]">16K</h1>
+					<h3 className="lg:text-[18px] text-[12px]"> Project Submitted</h3>
 				</div>
 			</div>
 
 			<div className="flex mx-[5vw] pt-[184px] gap-8 ">
-				<div>
+				<div className="hidden lg:flex">
 					<Circle />
 				</div>
+
 				<div>
 					<h1 className="font-sand font-bold text-[#23049d] text-[36px] leading-[40.01px]">
 						Review by influencer help <br /> you to grow your business <br />
