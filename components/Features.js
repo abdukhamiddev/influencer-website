@@ -30,11 +30,14 @@ const Features = () => {
 						<h1 className="text-[#23049D] font-sand font-bold md:text-[45px] leading-[100%] text-[30px] text-center md:text-justify lg:text-[35px]">
 							Smart Way you can <br /> grow your business
 						</h1>
-						<p className="font-mulish md:text-[15px] leading-[22.5px] text-[14px] ">
-							As you're browsing available influencer marketing <br />
-							consultates,it can be helpful to develope a sharelist <br /> of
-							they contractors you may want to interview
-						</p>
+						<div className="">
+							<p className="font-mulish md:text-[15px] leading-[22.5px] text-[12px] whitespace-pre md:whitespace-normal  ">
+								As you're browsing available influencer marketing <br />
+								consultates,it can be helpful to develope a sharelist <br /> of
+								they contractors you may want to interview
+							</p>
+						</div>
+
 						<div className="font-sand font-bold text-[15px] leading-[22.5px] ">
 							<div className="flex pb-[10px] space-x-2">
 								<Checked />
@@ -54,16 +57,16 @@ const Features = () => {
 						</Button>
 					</div>
 				</div>
-				<div className=" lg:mx-[9vw] pt-[166px]    flex  justify-center  items-center lg:items-stretch  lg:justify-between">
-					<div>
-						<h1 className="font-nori font-normal text-[34px] text-[#aa2ee6] leading-[37.88px] pb-[13px]">
+				<div className="lg:mx-[9vw] pt-[166px]    flex  justify-center  items-center lg:items-stretch  lg:justify-between mx-[6vw]">
+					<div className="">
+						<h1 className="font-nori font-normal text-[34px] text-[#aa2ee6] leading-[37.88px] pb-[13px] text-center md:text-justify">
 							Top Influencers This Month
 						</h1>
-						<h2 className="font-bold font-sand text-[#23049d] text-[35px] leading-[35px] pb-[30px]">
+						<h2 className="font-bold font-sand text-[#23049d] lg:text-[35px] md:leading-[35px] pb-[30px] text-[20px] text-center">
 							Use beatiful content <br />
 							created by influencers
 						</h2>
-						<p className="font font-mulish text-[15px] leading-[22.5px]">
+						<p className="font font-mulish lg:text-[15px] leading-[22.5px]  whitespace-pre text-[12px] md:whitespace-normal">
 							As you're browsing available influencer marketing <br />
 							consultates,it can be helpful to develope a sharelist of the{" "}
 							<br />
@@ -97,7 +100,7 @@ const Features = () => {
 						</div>
 					</div>
 					<div className="hidden lg:flex">
-						<Image src={Girl2} width={400} height={500} alt="HeroGirl" />
+						<Image src={Girl2} width={507} height={507} alt="HeroGirl" />
 					</div>
 				</div>
 			</section>
